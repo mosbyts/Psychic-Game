@@ -1,33 +1,55 @@
     var Wins = 0;
     var Losses = 0;
-    var Guesses = 5;
-
+    var guessesLeft = 5;
+    var userGuesses = [];
     var computerGuesses = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
+    var computerChoice = null;
+
+    var updateGuessesLeft = function(){
+        document.querySelector("#guesses-left").innerHTML = guessesLeft;
+    };
+
+    var computerGuess = function(){
+        computerGuesses[Math.floor(Math.random()*computerGuesses.length)];
+        return computerGuesses;
+    };
+
+    var userGuessed = function(){
+        document.querySelector("#user-guesses").innerHTML = userGuesses.join(", ");
+    };
+
+    var reset = function(){
+        guessesLeft = 5;
+        userGuesses = [];
+        updateGuessesLeft();
+        computerGuess();
+        userGuessed();
+    };
+
+    updateGuessesLeft();
+    computerGuess();
+
+
     document.onkeyup = function (){
-        var userGuess = String.fromCharCode(event.keyCode).
-            toUpperCase();
+        guessesLeft--;
+        var userGuess = event.key.toUpperCase();
+        userGuesses.push(userGuess);
+        updateGuessesLeft();
+        userGuessed();
 
-        console.log(userGuess);
-
-        var computerGuess = computerGuesses[Math.floor(Math.random()*computerGuesses
-        .length)];
-
-        console.log(computerGuess);
-        console.log("------------");
-
-        if(userGuess==computerGuess){
+        if(userGuess===computerChoice){
             Wins++;
-            console.log("You have won!");
-            console.log("Wins: " + Wins);
+            document.querySelector("#wins").innerHTML = Wins;
+            alert("You have won!");
+            reset();
         }
 
-        if(userGuess!==computerGuess){
+        if(guessesLeft==0){
             Losses++;
-            Guesses--;
-            console.log("Wins: " + Wins)
-            console.log("Losses: " + Losses);
-            console.log("Guesses left: " + Guesses);
+            document.querySelector("#losses").innerHTML = Losses;
+            reset();
         }
 
     }
+
