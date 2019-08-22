@@ -1,7 +1,7 @@
 # Psychic-Game
 The Psychic Game is a letter guessing game that requires the user to type a letter in hopes of guessing the randomly selected letter the computer chose. With only five guesses and 23 alphabetical letters to choose from, the likelihood of winning is low. Good luck player!
 
-This game was created as part of the University of Richmond Full Stack Flex Web Development program curriculum to further JavaScript skills. 
+This game was created as part of the University of Richmond Full Stack Flex Web Development program curriculum to further JavaScript skills. It is useful in learning basic JS skills as well as testing your luck.
 
 This game was created by making a simple HTML and CSS file then adding in a JavaScript file. Each changing number is a variable on the JS file with some being a span on the HTML file. Functions are included to make the code work, then conditional if/then statements are used to ensure the correct action happens (alert for wins and game refresh for losses).
 
