@@ -2,18 +2,17 @@
     var Losses = 0;
     var guessesLeft = 5;
     var userGuesses = [];
-    var computerGuesses = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-
-    var computerChoice = null;
+    var computerGuesses = "qwertyuiopasdfghjklzxcvbnm"; 
+    var computerChoice = " ";
 
     var updateGuessesLeft = function(){
         document.querySelector("#guesses-left").innerHTML = guessesLeft;
     };
 
-    var computerGuess = function(){
-        computerGuesses[Math.floor(Math.random()*computerGuesses.length)];
-        return computerGuesses;
-    };
+    function computerGuesses1() {
+        computerChoice = computerGuesses.charAt(Math.floor(Math.random()*computerGuesses.length));
+        return computerChoice;
+    }
 
     var userGuessed = function(){
         document.querySelector("#user-guesses").innerHTML = userGuesses.join(", ");
@@ -23,29 +22,29 @@
         guessesLeft = 5;
         userGuesses = [];
         updateGuessesLeft();
-        computerGuess();
+        computerGuesses1();
         userGuessed();
     };
 
     updateGuessesLeft();
-    computerGuess();
-
+    computerGuesses1();
+    
 
     document.onkeyup = function (){
         guessesLeft--;
-        var userGuess = event.key.toUpperCase();
+        var userGuess = event.key.toLowerCase();
         userGuesses.push(userGuess);
         updateGuessesLeft();
         userGuessed();
 
-        if(userGuess===computerChoice){
+        if(userGuess == computerGuesses1()){
             Wins++;
             document.querySelector("#wins").innerHTML = Wins;
-            alert("You have won!");
+            alert("You have won! The correct letter was: " + computerGuesses1() + ".");
             reset();
         }
 
-        if(guessesLeft==0){
+        if(guessesLeft===0){
             Losses++;
             document.querySelector("#losses").innerHTML = Losses;
             reset();
