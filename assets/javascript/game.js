@@ -1,6 +1,6 @@
     var Wins = 0;
     var Losses = 0;
-    var guessesLeft = 5;
+    var guessesLeft = 8;
     var userGuesses = [];
     var computerGuesses = "qwertyuiopasdfghjklzxcvbnm"; 
     var computerChoice = " ";
@@ -19,7 +19,7 @@
     };
 
     var reset = function(){
-        guessesLeft = 5;
+        guessesLeft = 8;
         userGuesses = [];
         updateGuessesLeft();
         computerGuesses1();
@@ -40,11 +40,12 @@
         if(userGuess == computerGuesses1()){
             Wins++;
             document.querySelector("#wins").innerHTML = Wins;
-            alert("You have won! The correct letter was: " + computerGuesses1() + ".");
+            alert("You have won! The correct letter was: " + computerChoice + ".");
             reset();
         }
 
         if(guessesLeft===0){
+            alert("You have lost! Click ok then press any key to try again.")
             Losses++;
             document.querySelector("#losses").innerHTML = Losses;
             reset();
