@@ -37,6 +37,8 @@
         updateGuessesLeft();
         userGuessed();
 
+        //If userGuess != a letter, do not subtract a guess and alert user to use letters only.
+
         if(userGuess == computerGuesses1()){
             Wins++;
             document.querySelector("#wins").innerHTML = Wins;
@@ -44,7 +46,7 @@
             reset();
         }
 
-        if(guessesLeft===0){
+        if(guessesLeft === 0){
             alert("You have lost! Click ok then press any key to try again.")
             Losses++;
             document.querySelector("#losses").innerHTML = Losses;
