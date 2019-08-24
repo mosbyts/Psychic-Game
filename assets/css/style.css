@@ -21,10 +21,10 @@ h2{
 
 .star1{
     animation-iteration-count: infinite;
-    height: 50px;
+    height: 55px;
     width: auto;
     position: absolute;
-    left: 50px;
+    left: 275px;
     top: 250px;
 }
 
@@ -42,17 +42,17 @@ h2{
     height: 150px;
     width: auto;
     position: absolute;
-    right: 50px;
+    right: 450px;
     top: 350px;
 }
 
 .star4{
     animation-iteration-count: infinite;
-    height: 20px;
+    height: 95px;
     width: auto;
     position: absolute;
-    right: 50px;
-    top: 275px;
+    right: 200px;
+    top: 255px;
 }
 
 .star5{
@@ -60,8 +60,8 @@ h2{
     height: 250px;
     width: auto;
     position: absolute;
-    right: 50px;
-    top: 475px;
+    right: 150px;
+    top: 425px;
 }
 
 .star6{
@@ -71,6 +71,24 @@ h2{
     position: absolute;
     right: 500px;
     top: 325px;
+}
+
+.star7{
+    animation-iteration-count: infinite;
+    height: 125px;
+    width: auto;
+    position: absolute;
+    left: 575px;
+    top: 300px;
+}
+
+.star8{
+    animation-iteration-count: infinite;
+    height: 150px;
+    width: auto;
+    position: absolute;
+    left: 50px;
+    top: 300px;
 }
 
 
