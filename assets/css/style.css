@@ -6,13 +6,12 @@ body{
 
 h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: palevioletred;
+    background-color: #DB7093;
     border-bottom: solid thick 	#6E95FA;
     padding: 0;
 }
 
 .flash{
-    padding: 0;
     color: #ffffff;
 }
 
@@ -22,8 +21,8 @@ h1{
 }
 
 .Intro{
-    font-family: serif;
-    color: pink;
+    font-family: 'Metamorphous', cursive;
+    color:#DB7093;
 }
 
 .star1{
@@ -108,8 +107,9 @@ h1{
 
 
 p{
+    font-family: 'Metamorphous', cursive;
     font-weight: bold;
-    color: purple;
+    color: 	#800080;
     padding: 0;
 }
 
@@ -118,8 +118,8 @@ span{
 }
 
 footer{
-    background-color: palevioletred;
-    border-bottom: solid thick 	#6E95FA;
-    padding: 10px;
+    background-color: #DB7093;
+    border-bottom: solid thick	#6E95FA;
+    padding: 20px;
     clear: both;
 }
