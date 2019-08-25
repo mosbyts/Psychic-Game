@@ -12,25 +12,33 @@ h1{
 }
 
 .flash{
-    padding-top: 20px;
+    padding: 0;
     color: #ffffff;
 }
 
-h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.eye{
+    height: 300px;
+    width: auto;
+}
+
+.Intro{
+    font-family: serif;
+    color: pink;
 }
 
 .star1{
     animation-iteration-count: infinite;
-    height: 155px;
+    animation-duration: 1s;
+    height: 150px;
     width: auto;
     position: absolute;
     left: 550px;
-    top: 250px;
+    top: 230px;
 }
 
 .star2{
     animation-iteration-count: infinite;
+    animation-duration: 2s;
     height: 75px;
     width: auto;
     position: absolute;
@@ -40,16 +48,18 @@ h2{
 
 .star3{
     animation-iteration-count: infinite;
-    height: 150px;
+    animation-duration: 3s;
+    height: 140px;
     width: auto;
     position: absolute;
     right: 550px;
-    top: 300px;
+    top: 280px;
 }
 
 .star4{
     animation-iteration-count: infinite;
-    height: 95px;
+    animation-duration: 4s;
+    height: 85px;
     width: auto;
     position: absolute;
     right: 600px;
@@ -58,16 +68,18 @@ h2{
 
 .star5{
     animation-iteration-count: infinite;
+    animation-duration: 1s;
     height: 250px;
     width: auto;
     position: absolute;
     right: 150px;
-    top: 425px;
+    top: 340px;
 }
 
 .star6{
     animation-iteration-count: infinite;
-    height: 175px;
+    animation-duration: 2s;
+    height: 170px;
     width: auto;
     position: absolute;
     right: 538px;
@@ -76,26 +88,29 @@ h2{
 
 .star7{
     animation-iteration-count: infinite;
+    animation-duration: 3s;
     height: 125px;
     width: auto;
     position: absolute;
     left: 575px;
-    top: 200px;
+    top: 150px;
 }
 
 .star8{
     animation-iteration-count: infinite;
-    height: 150px;
+    animation-duration: 4s;
+    height: 140px;
     width: auto;
     position: absolute;
-    left: 675px;
-    top: 325px;
+    left: 700px;
+    top: 260px;
 }
 
 
 p{
     font-weight: bold;
     color: purple;
+    padding: 0;
 }
 
 span{
@@ -104,6 +119,7 @@ span{
 
 footer{
     background-color: palevioletred;
-    padding: 20px;
+    border-bottom: solid thick 	#6E95FA;
+    padding: 10px;
     clear: both;
 }

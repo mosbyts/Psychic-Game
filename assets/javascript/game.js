@@ -4,6 +4,7 @@
     var userGuesses = [];
     var computerGuesses = "qwertyuiopasdfghjklzxcvbnm"; 
     var computerChoice = " ";
+    var notAllowed = "1234567890-=/*-+";
 
     var updateGuessesLeft = function(){
         document.querySelector("#guesses-left").innerHTML = guessesLeft;
@@ -38,6 +39,8 @@
         userGuessed();
 
         //If userGuess != a letter, do not subtract a guess and alert user to use letters only.
+        //if()
+            //alert("You can only guess letters, try again.");
 
         if(userGuess == computerGuesses1()){
             Wins++;
