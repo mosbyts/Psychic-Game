@@ -15,7 +15,7 @@
     function computerGuesses1() {
         computerChoice = computerGuesses.charAt(Math.floor(Math.random()*computerGuesses.length));
         return computerChoice;
-    }
+    };
 
     //Make userGuessed a function that will update the HTML ID user-guesses and change the "You Guessed" number.
     var userGuessed = function(){
