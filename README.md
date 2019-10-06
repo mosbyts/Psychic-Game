@@ -1,5 +1,8 @@
 # Psychic-Game
 
+## Play The Game
+Click here: https://mosbyts.github.io/Psychic-Game/
+
 ## Description
 The Psychic Game is a letter guessing game that requires the user to type a letter in hopes of guessing the randomly selected letter the computer chose. With only five guesses and 23 alphabetical letters to choose from, the likelihood of winning is low. Good luck player!
 
